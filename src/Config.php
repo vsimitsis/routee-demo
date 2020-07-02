@@ -57,7 +57,7 @@ class Config
      */
     protected static function getConfigPath(): string
     {
-        return __DIR__ . '/../../config.json';
+        return __DIR__ . '/../config.json';
     }
 
     /**
@@ -69,7 +69,7 @@ class Config
     protected static function fetchConfig(): void
     {
         if (!file_exists(self::getConfigPath())) {
-            throw new \Exception('Missing thirst plugin default configuration');
+            throw new \Exception('Missing routee default configuration');
         }
 
         self::$config = json_decode(file_get_contents(self::getConfigPath()), true);

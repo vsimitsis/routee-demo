@@ -14,8 +14,7 @@
     },
     "autoload" : {
         "psr-4": {
-          "Routee\\" : "./src/classes",
-          "Routee\\Models\\" : "./src/Models/"
+          "Routee\\" : "./src/"
         }
       }
 }
