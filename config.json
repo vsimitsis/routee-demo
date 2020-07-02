@@ -1,6 +1,7 @@
 {
     "version": 2020070201,
     "cityId": "8133841",
+    "recipient": "+306948872100",
     "temp": {
         "threshold": 200
     },

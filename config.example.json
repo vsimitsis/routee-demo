@@ -1,6 +1,7 @@
 {
     "version": 2020070201,
     "cityId": "The city ID from the OpenWeather list",
+    "recipient": "The mobile number of the recipient",
     "temp": {
         "threshold": "(Integer)The max temperature for the SMS."
     },

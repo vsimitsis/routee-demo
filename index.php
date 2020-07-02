@@ -21,14 +21,14 @@ if (!$weather) {
 if ($weather->main->temp > Config::get('temp.threshold')) {
     RouteeApi::sendSMS([
         'body' => "Evangelos Simitsis, the temperature is more than 20C. Actual temperature: " . $weather->main->temp,
-        'to'   => '+306987027299',
-        'from' => 'Thanagor'
+        'to'   => Config::get('recipient'),
+        'from' => 'Routee'
     ]);
 } else {
     RouteeApi::sendSMS([
         'body' => "Evangelos Simitsis, the temperature is less than 20C. Actual Temperature: " . $weather->main->temp,
-        'to'   => '+306987027299',
-        'from' => 'Thanagor'
+        'to'   => Config::get('recipient'),
+        'from' => 'Routee'
     ]);
 }
 
