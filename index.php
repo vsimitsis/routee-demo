@@ -14,6 +14,10 @@ RouteeApi::auth();
 
 $weather = Weather::find($cityID);
 
+if (!$weather) {
+    throw new Exception(sprintf('City with ID: %s has not been found.', $cityID));
+}
+
 if ($weather->main->temp > Config::get('temp.threshold')) {
     RouteeApi::sendSMS([
         'body' => "Evangelos Simitsis, the temperature is more than 20C. Actual temperature: " . $weather->main->temp,
