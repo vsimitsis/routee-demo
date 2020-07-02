@@ -1,0 +1,21 @@
+{
+    "name": "thanagor/routee",
+    "description": "PHP Developer Assessment",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Vagelis Simitsis",
+            "email": "vagelis.simitsis@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload" : {
+        "psr-4": {
+          "Routee\\" : "./src/classes",
+          "Routee\\Models\\" : "./src/Models/"
+        }
+      }
+}

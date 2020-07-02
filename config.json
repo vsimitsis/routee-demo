@@ -1,0 +1,18 @@
+{
+    "version": 2020070201,
+    "cityId": "8133841",
+    "temp": {
+        "threshold": 200
+    },
+    "api": {
+        "routee": {
+            "id": "57cd83a3e4b0464b9119ba46",
+            "key": "OXr7WYcP9A",
+            "sms-endpoint": "https://connect.routee.net/sms"
+        },
+        "openweather": {
+            "key": "b385aa7d4e568152288b3c9f5c2458a5",
+            "endpoint": "http://api.openweathermap.org/data/2.5/weather?id=%s&appid=%s"
+        }
+    }
+}

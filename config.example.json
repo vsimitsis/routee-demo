@@ -1,0 +1,17 @@
+{
+  "version": 2020070201,
+  "temp": {
+      "threshold": 200
+  },
+  "api": {
+      "routee": {
+          "id": "5efda8bd8b71de03b7ebfd56",
+          "key": "pjYRntHxcj",
+          "endpoint": "https://%s.api.thirst.io/"
+      },
+      "openweather": {
+          "key": "b385aa7d4e568152288b3c9f5c2458a5",
+          "endpoint": "http://api.openweathermap.org/data/2.5/weather?id=%s&appid=%s"
+      }
+  }
+}
