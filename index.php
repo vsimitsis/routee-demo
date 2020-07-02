@@ -29,6 +29,10 @@ if ($weather->main->temp > Config::get('temp.threshold')) {
 }
 
 /**
+ * config.json is supposed to be excluded from the repo but for obvious reasons is included
+ */
+
+/**
  * If i didn't mind to limit the script on browsers only i could implement this
  * by sending a simple ajax call every 10min. Since it's not clear the "Repeat the above procedure every 10 minutes."
  * i would guess someone could `sudo nano /etc/crontab` and add the following line :) 
